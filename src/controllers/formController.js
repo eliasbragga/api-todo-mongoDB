@@ -41,6 +41,7 @@ export default class FormController {
     const priority = req.body.hasOwnProperty('priority') ? req.body.priority : false;
     const todo = new form({
       todo: req.body.todo,
+      description: req.body.description,
       isDone: isDone,
       priority: priority
     })
